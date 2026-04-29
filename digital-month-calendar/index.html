@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Month 2026 — Tata Projects IT&amp;Digital</title>
+  <meta name="description" content="Interactive Digital Month Calendar — IT&Digital Team, Tata Projects Ltd" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23040810'/><rect x='30' y='30' width='40' height='40' rx='4' fill='none' stroke='%2300b4ff' stroke-width='5'/><path d='M40 30V20M50 30V20M60 30V20M40 70v10M50 70v10M60 70v10M30 40H20M30 50H20M30 60H20M70 40h10M70 50h10M70 60h10' stroke='%2300b4ff' stroke-width='5' stroke-linecap='round'/></svg>" />
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+<div class="wrapper">
+  <header>
+    <div class="logo-row">
+      
+      <!-- Tata Projects Badge -->
+      <div class="tata-badge" style="display:flex; align-items:center; gap:6px;">
+        
+        <!-- Replace this file name with your actual logo file -->
+        <img 
+          src="assets/tata-logo.png" 
+          alt="Tata Logo"
+          style="height:22px;"
+        />
+
+        <h1 style="margin:0;">Tata Projects Ltd</h1>
+      </div>
+
+      <div class="team-badge">IT &amp; DIGITAL TEAM</div>
+    </div>
+  </header>
+</div>
+
+      <h1 class="header-title">DIGITAL MONTH 2026</h1>
+      <div class="header-subtitle">// EMPOWERING EPC THROUGH TECHNOLOGY &amp; INNOVATION //</div>
+
+      <div class="scan-line"></div>
+
+      <!-- Week legend cards -->
+      <div style="width:100%;font-family:'Share Tech Mono',monospace;font-size:0.62rem;color:rgba(180,210,240,0.45);letter-spacing:0.18em;margin-bottom:10px;text-align:center">
+        ◈ CLICK A WEEK CARD TO NAVIGATE · CLICK A CALENDAR DAY TO VIEW SESSIONS ◈
+      </div>
+    </header>
+
+    <!-- ── WEEK LEGEND ── -->
+    <div class="week-legend" id="week-legend" role="list" aria-label="Week themes"></div>
+
+    <!-- ── CALENDAR ── -->
+    <div class="month-header">
+      <button class="nav-btn" id="nav-prev" aria-label="Previous month">&#8592;</button>
+      <div class="month-label" id="month-label">June 2026</div>
+      <button class="nav-btn" id="nav-next" aria-label="Next month">&#8594;</button>
+    </div>
+
+    <div class="week-highlight-bar"></div>
+
+    <div class="cal-grid" role="grid" aria-label="Digital Month Calendar">
+      <!-- Day-of-week header -->
+      <div class="dow-header">
+        <div class="dow-cell">MON</div>
+        <div class="dow-cell">TUE</div>
+        <div class="dow-cell">WED</div>
+        <div class="dow-cell">THU</div>
+        <div class="dow-cell">FRI</div>
+        <div class="dow-cell weekend">SAT</div>
+        <div class="dow-cell weekend">SUN</div>
+      </div>
+      <!-- Days injected by JS -->
+      <div class="cal-days" id="cal-days" role="rowgroup"></div>
+    </div>
+
+    <!-- ── EPC TECH ICONS ROW ── -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:28px;margin:32px 0 8px;flex-wrap:wrap;">
+
+      <!-- Chip / Digital -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0.55;transition:opacity 0.2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.55">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00b4ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="7" y="7" width="10" height="10" rx="1"/><path d="M9 7V4M12 7V4M15 7V4M9 17v3M12 17v3M15 17v3M7 9H4M7 12H4M7 15H4M17 9h3M17 12h3M17 15h3"/>
+        </svg>
+        <span style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#00b4ff;letter-spacing:0.1em">DIGITAL</span>
+      </div>
+
+      <!-- BIM -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0.55;transition:opacity 0.2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.55">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+        <span style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#a855f7;letter-spacing:0.1em">BIM</span>
+      </div>
+
+      <!-- Crane -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0.55;transition:opacity 0.2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.55">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 21V10"/><path d="M19 21V10"/><path d="M2 10h20"/><path d="M12 2v8"/><path d="M12 2l6 6"/><path d="M12 2L6 8"/><path d="M8 21h8"/><rect x="9" y="15" width="6" height="6" rx="1"/>
+        </svg>
+        <span style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#fb923c;letter-spacing:0.1em">CONSTRUCTION</span>
+      </div>
+
+      <!-- Drone -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0.55;transition:opacity 0.2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.55">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M4 4l3 3"/><path d="M17 4l3 3"/><path d="M4 20l3-3"/><path d="M17 20l3-3"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/>
+        </svg>
+        <span style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#fb923c;letter-spacing:0.1em">DRONE</span>
+      </div>
+
+      <!-- Analytics -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0.55;transition:opacity 0.2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.55">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22d3a5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 5-5"/>
+        </svg>
+        <span style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#22d3a5;letter-spacing:0.1em">ANALYTICS</span>
+      </div>
+
+      <!-- AI -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0.55;transition:opacity 0.2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.55">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22d3a5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+        </svg>
+        <span style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#22d3a5;letter-spacing:0.1em">AI / ML</span>
+      </div>
+
+      <!-- IoT -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0.55;transition:opacity 0.2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.55">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00b4ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="#00b4ff"/>
+        </svg>
+        <span style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#00b4ff;letter-spacing:0.1em">IoT</span>
+      </div>
+
+      <!-- Safety -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0.55;transition:opacity 0.2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.55">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f5822a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>
+        </svg>
+        <span style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:#f5822a;letter-spacing:0.1em">SAFETY</span>
+      </div>
+
+    </div>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div style="margin-bottom:6px">
+        ◈ TATA PROJECTS LTD — IT &amp; DIGITAL TEAM — DIGITAL MONTH 2026 ◈
+      </div>
+      <div>ENGINEERING · PROCUREMENT · CONSTRUCTION · DRIVEN BY DIGITAL</div>
+    </footer>
+  </div><!-- /.wrapper -->
+
+  <!-- ── MODAL ── -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-date-lbl">
+    <div class="modal" id="modal-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
