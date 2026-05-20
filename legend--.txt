@@ -1,0 +1,20 @@
+legend--
+
+      <!-- Legend -->
+      <div class="cal-legend">
+        <div class="legend-item" data-filter="1">
+          <span class="legend-dot w1"></span> Week 1: Digital Foundations
+        </div>
+        <div class="legend-item" data-filter="2">
+          <span class="legend-dot w2"></span> Week 2: Design &amp; Engineering Tech
+        </div>
+        <div class="legend-item" data-filter="3">
+          <span class="legend-dot w3"></span> Week 3: Construction &amp; Monitoring Tech
+        </div>
+        <div class="legend-item" data-filter="4">
+          <span class="legend-dot w4"></span> Week 4: Smart Project Delivery &amp; Data Analytics
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot other"></span> Other Days
+        </div>
+      </div>
